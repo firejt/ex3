@@ -194,6 +194,40 @@ footer{
     text-align: center;
 }
 
+/*marquee*/
+.marquee{
+    width: 100%;
+    overflow: hidden;
+    background: rgba(251, 139, 36, 1);
+    color: rgba(255, 255, 255, 1);
+    padding: 20px 0;
+}
+
+.marquee-content{
+
+    flex-shrink: 0;
+    padding-right:0px;
+    white-space: nowrap;
+    font-size: max(1.5rem, 2vw);
+}
+
+.marquee-track{
+    display:flex;
+    width: max-content;
+    animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee{
+
+    from{
+        transform: translateX(-50%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+
 /*for tablets*/
 @media only screen and (max-width: 1200px) {
 }
